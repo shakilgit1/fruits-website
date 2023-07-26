@@ -39,37 +39,9 @@
       <!-- navbar start -->
       <nav class="md:bg-[#F85559] rounded-full py-3 my-5 md:px-5">
         
-        <div class="flex justify-around items-center text-black md:text-white">
-          <div class="flex items-center md:flex-1">
-            <div class="">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
-                    />
-                  </svg>
-                </label>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li><a>Home</a></li>
-                  <li><a>About Us</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>All Fruits</a></li>
-                </ul>
-              </div>
-            </div>
+        <div class="flex md:justify-between items-center text-black md:text-white">
+          <div class="flex items-center md:flex-1 ">
+            
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1 text-black md:text-white">
                 <li><a>Home</a></li>
@@ -80,23 +52,53 @@
             </div>
           </div>
           <!-- logo -->
-          <div class="flex items-center gap-5 md:flex-1">
+          <div class="flex items-center gap-2 md:gap-5  md:flex-1 ml- md:ml-0">
             <img src="./images/logo.png" alt="" />
             <h2 class="text-4xl font-semibold text-black md:text-white">
               Fruit Burst
             </h2>
           </div>
           <!-- searchbar -->
-          <div class="form-control flex md:flex-1">
+          <div class="form-control md:flex-1 relative">
             <input
               type="text"
               placeholder="Search here  "
-              class="input input-bordered w-12 md:w-auto rounded-full hidden md:block h-10 text-black"
+              class="input input-bordered w-12 md:w-auto rounded-full h-10 text-black hidden md:block"
             />
-            <!-- <span><i class="fa-solid fa-magnifying-glass"></i></span> -->
+            <span><i class="fa-solid fa-magnifying-glass absolute w-5 h-5 lg:ml-96 text-gray-400 bottom-2 hidden md:hidden lg:block"></i></span>
+          </div>
+
+          <div class="ml-24 md:ml-0">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box "
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <!-- </div> -->
+        
       </nav>
 
       <!-- banner section -->
@@ -258,7 +260,7 @@
         </div>
 
         <!-- cards  -->
-        <div class="my-12 grid grid-cols-1 md:grid-cols-4 gap-5">
+        <div class="my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
          
           <!-- card 1 -->
           <div
@@ -653,7 +655,7 @@
         </div>
 
         <!-- dedicated items -->
-      <div class="md:flex space-y-3 md:space-y-0 gap-10  justify-between mt-10">
+      <div class=" grid md:grid-cols-2 lg:grid-cols-3  space-y-3 md:space-y-0 gap-10  justify-between mt-10">
         <!-- left side content  -->
         <div class="">
           <!-- first -->
@@ -700,7 +702,7 @@
         
         <div class="space-y-3"> 
         <h2 class="text-xl font-extrabold">Integrated Supplier</h2>
-        <hr class="w-20 font-bold text-black">
+        <hr class="ml-60 flex items-center text-black">
         <p class="">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
         </div>
         <div>
@@ -712,7 +714,7 @@
         
         <div class="space-y-3"> 
         <h2 class="text-xl font-extrabold">Sustainable Practice</h2>
-        <hr class="w-20 font-bold text-black">
+        <hr class="ml-60 font-bold text-black text-right">
         <p class="">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p></div>
         <div>
           <span><i class="fa-solid fa-ice-cream bg-gray-400 p-2 rounded-full"></i></span>
@@ -723,7 +725,7 @@
         
         <div class="space-y-3"> 
         <h2 class="text-xl font-extrabold">The Benefits Only</h2>
-        <hr class="w-20 font-bold text-black text-right">
+        <hr class="ml-60 flex text-black">
         <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p></div>
         <div>
           <span><i class="fa-solid fa-thumbs-up bg-gray-400 p-2 rounded-full"></i></span>
